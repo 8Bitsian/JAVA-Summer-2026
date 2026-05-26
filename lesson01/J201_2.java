@@ -19,8 +19,6 @@ public class J201_1 {
     // Output
     System.out.println("\nYour name: " + name);
     System.out.println("Your age: " + age);
-    
-    return 0;
   }
 }
 
@@ -38,7 +36,7 @@ class Person {
       if (name.matches("[a-zA-Z- ]+")) {
         return name;
       } else {
-        System.out.println("ERROR: Invalid Input - Name must be characters only (a-z or A-Z)\n");
+        System.out.println("ERROR: Invalid Input - Name must be characters only (A-Z)\n");
       }
     }
   }
@@ -49,12 +47,12 @@ class Person {
 
     while (true) {
       // Get input
-      System.out.println("\nPlease emter your age: ");
+      System.out.println("\nPlease enter your age: ");
       age = input.nextLine().trim();
 
       // Validate input
-      if (age.matches("[0-9]")) {
-        return name;
+      if (age.matches("[0-9]+")) {
+        return age;
       } else {
         System.out.println("ERROR: Invalid Input - Age must be digits only (0-9)\n");
       }
