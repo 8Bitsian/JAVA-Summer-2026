@@ -1,0 +1,36 @@
+*****************************************************
+Note that including entire executable code in your javaNote can be considered cheating.
+Therefore, it is recommended to only include key algorithms, concepts, syntax, and best practices.
+*****************************************************
+
+----------------------------------
+Taking input from the user
+1.import java.util.Scanner;
+2.Scanner *** = new scanner(system.in);
+3.int    var = ***.nextInt();
+  double var = ***.nextDouble();
+  String var = ***.nextLine();
+
+----------------------------------
+IDE Shortcuts 
+Ctrl + /    : // 	for single line comments
+Ctrl + Shift: /.   ./ 	for block comments
+Ctrl + Shift +F10 : Run
+
+----------------------------------
+class vs. object 
+class has a lot of methods
+class is a combination of variables and methods
+class is a template (waffle iron) for an object (waffle)
+class ia a user-defined data type
+
+----------------------------------
+4 Object-oriented Programming (OOP) concepts
+Encapsulation
+	medication seealed in a capsule
+Abstraction
+	TV remote to control TV
+Inheritance
+	code reusability by utilizing an existing class 
+Polymorphism
+	overriding vs. overloading
