@@ -1,7 +1,6 @@
 /*
   Imani Hollie 05/26/26
   5-Minute Challenge - Create a Rectangle class by inheriting from the Shape class
-  and write a code to show the area of a rectangle.
   Sample Outut:
   Width: ***
   Height: ***
@@ -10,72 +9,54 @@
 
 import java.util.Scanner;
 
-public class J201_1 {
-  public static void main(String[] args) {
-    // Declare objects
-    Scanner input = new Scanner(System.in);
+public class J202_1 {
+     static void main() {
+        // Declare objects
+        Scanner input = new Scanner(System.in);
 
-    while (true) {
-      // Input
-      String value = getValue(input);
-      if (value.equals("X")) break;
+        while (true) {
+            // Input (Get width and height of a rectangle)
+            System.out.print("\nEnter Width: ");
+            double width = input.nextDouble();
 
-      // Process
-      Rectangle r = new Rectangle(width, height);
-      
-      // Output
-      System.out.println("\nWidth: " + width);
-      System.out.println("Height: " + height);
-      System.out.println("Area: " + r.area);
-      System.out.println();
+            System.out.print("Enter Height: ");
+            double height = input.nextDouble();
+
+            // Process (Create rectangle object as a subset of Shape)
+            Rectangle rectangle = new Rectangle(width, height);
+
+            // Output
+            System.out.println("\nWidth: " + width);
+            System.out.println("Height: " + height);
+            System.out.println("Area: " + rectangle.area());
+        }
     }
-  }
-
-  
 }
-
-while (true) {
-      // Get user input
-      System.out.println("\nEnter Age (-1 to Exit): ");
-      age = input.nextLine().trim();
-
-      // Check for sentinel
-      if (age.equals("-1")) return "-1";
-
-      // Validate input
-      if (age.matches("[0-9]")) {
-        return name;
-      } else {
-        System.out.println("ERROR: Invalid Input - Age must be digits only (0-9)\n");
-      }
-    }
-  }
-
-
 
 class Shape {
-  private String creator;
-  
-  public Shape(String creator)
-    this.creator = creator;
+    private final String creator;
 
-  public String getName()
-    return creator;
+    public Shape(String creator) { this.creator = creator; }
 
-  public double area() {
-    System.out.println("Write code to calculate the area for each shape.");
-    return 0.0;  // Default implementation
-  }
+    public String getName() { return creator; }
+
+    public double area() {
+        System.out.println("Write code to calculate the area for each shape");
+        return 0.0; // Default implementation
+    }
 }
 
-class Rectangle {
-  double width, height;
+class Rectangle extends Shape {
+    double width, height;
 
-  public Rectangle(double width, double height) {
-    
-  }
+    public Rectangle(double width, double height) {
+        super("Rectangle");
+        this.width = width;
+        this.height = height;
+    }
 
-  public double area() {
-    
-  }
+    @Override
+    public double area() {
+        return width * height;
+    }
 }
