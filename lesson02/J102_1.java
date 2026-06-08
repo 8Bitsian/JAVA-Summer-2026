@@ -1,7 +1,7 @@
 /*
   Imani Hollie 05/26/26
   5-Minute Challenge - Create a Rectangle class by inheriting from the Shape class
-  Sample Outut:
+  Sample Output:
   Width: ***
   Height: ***
   Area: ***
