@@ -12,8 +12,9 @@
 - [Lesson 5](./lesson05/) - JavaFX Basics
 - [Lesson 6](./lesson06/) - Event-Driven Programming & Animations
 - [Midterm](./midterm/)
-- [Lesson 7](./lesson07/) - Advanced JavaFX and FXML
-- [Lesson 8](./lesson08/) - Recursion
-- [Lesson 9](./lesson09/) - Generics
-- [Lesson 10](./lesson10/) - Lists, Stacks, Queues & Priority Queues
+- [Lesson 7](./lesson07/) - JavaX UI Controls & Multimedia
+- [Lesson 8](./lesson08/) - Advanced JavaFX and FXML
+- [Lesson 9](./lesson09/) - Recursion
+- [Lesson 10](./lesson10/) - Generics
+- [Lesson 11](./lesson11/) - Lists, Stacks, Queues & Priority Queues
 - [Final](./final/)
