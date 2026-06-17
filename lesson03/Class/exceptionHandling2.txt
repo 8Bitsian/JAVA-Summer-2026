@@ -1,0 +1,30 @@
+public class ExceptionHandlingEx2 {
+
+    public static void main(String[] args) {
+        methodA(3, 0);
+        System.out.println("message 1");
+    }
+    public static int methodA(int a, int b) {
+        try {
+            return methodB(a, b);
+        } catch (IllegalArgumentException ex) {
+            System.out.println("Message A");
+            throw new UnsupportedOperationException("Exception A", ex);
+        }
+    }
+    public static int methodB(int a, int b) {
+        try {
+            return methodC(a, b);
+        } catch (IllegalArgumentException ex) {
+            System.out.println("Message B");
+            throw ex;
+        }
+    }
+    public static int methodC(int a, int b) {
+        if (a <= 0 || b <= 0) {
+            throw new IllegalArgumentException("Exception B");
+        }
+        return a / b;
+    }
+}
+

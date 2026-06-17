@@ -1,0 +1,14 @@
+public class ExceptionHandlingEx1 {
+    static void methodA() {
+        methodB();
+    }
+    static void methodB() {
+        methodC();
+    }
+    static void methodC() {
+        int result = 0 / 0;
+    }
+    public static void main(String[] args) {
+        methodA();
+    }
+}
